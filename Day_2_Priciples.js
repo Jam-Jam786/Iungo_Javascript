@@ -105,6 +105,11 @@
 // skipping over every other element
 // returns 0
 
+
+
+
+
+
 // object oritented coding - CLASS AND OBJECT
 // CLASS - TEMPLATE OF AN OBJECT
 // OBJECT - INSTANCE OF CLASS. COLLECTION OF ATTRIBUTE(WHAT DESCRIBES THEM) AND FUNCTION(SOMETHING IT CAN DO) dont need to write function in front of it 
@@ -114,21 +119,21 @@ class person {
     name = "matt"
     job = "tutor"
 
-    constructor(name, job, age,){
+    constructor(name, job, age,) {
         this.name = name
         this.job = job
         this.age = age
     }
 
-    getDescription(){
-        return(`my name ${this.name} and I work as a ${this.job} and I am ${this.age}`)
+    getDescription() {
+        return (`my name ${this.name} and I work as a ${this.job} and I am ${this.age}`)
     }
-    haveBirthday(){
-    return this.age++
-}
+    haveBirthday() {
+        return this.age++
+    }
 }
 
-let person1 = new person("matt", "tutor",26 )
+let person1 = new person("matt", "tutor", 26)
 person1.haveBirthday()
 let person2 = new person("jane", "Scuba Diver", 28)
 person2.haveBirthday()
@@ -140,11 +145,11 @@ person3.haveBirthday()
 // console.log(person3.getDescription())
 
 
-const persons =[person1, person2, person3]
+const persons = [person1, person2, person3]
 
-for(let i = 0; i < persons.length; i++){
+for (let i = 0; i < persons.length; i++) {
     persons[i].haveBirthday()
-    console.log(persons[i]. getDescription())
+    console.log(persons[i].getDescription())
 }
 
 

@@ -160,9 +160,9 @@
 // multiple(2, 3)
 // multiple(15, 10)
 
-function multiply(number1, number2){
-    for(let i=1; i<=number2;i++){
-        console.log(`${number1} x ${i} = ${number1*i}`)
+function multiply(number1, number2) {
+    for (let i = 1; i <= number2; i++) {
+        console.log(`${number1} x ${i} = ${number1 * i}`)
     }
 }
 multiply(7, 1)
